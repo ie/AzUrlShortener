@@ -23,13 +23,13 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_ISLAND_081F53710 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_ISLAND_081F53710 }} # Set by Azure SWA - DO NOT CHANGE
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments) # Set by Azure SWA - DO NOT CHANGE
+          action: "upload" # Set by Azure SWA - DO NOT CHANGE
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "src/Cloud5mins.ShortenerTools.TinyBlazorAdmin" # App source code path
-          api_location: "src/Cloud5mins.ShortenerTools.Functions" # Api source code path - optional
+          api_location: "src/Cloud5mins.ShortenerTools.Functions" # Api source code path - DO NOT CHANGE - Azure SWA Free Tier requirement
           output_location: "wwwroot" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
@@ -42,5 +42,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_ISLAND_081F53710 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_ISLAND_081F53710 }} # Set by Azure SWA - DO NOT CHANGE
           action: "close"
