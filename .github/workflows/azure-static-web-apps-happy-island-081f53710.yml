@@ -44,3 +44,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_ISLAND_081F53710 }} # Set by Azure SWA - DO NOT CHANGE
           action: "close"
+          app_location: "src/Cloud5mins.ShortenerTools.TinyBlazorAdmin" # unused but removes an error - (unresolved) context: https://stackoverflow.com/q/78544649
