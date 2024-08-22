@@ -1,7 +1,11 @@
 {
   "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
   "configurations": {
-    "AzUrlShortener": {
+    "debug": {
+      "appDevserverUrl": "http://localhost:5000",
+      "apiDevserverUrl": "http://localhost:7071"
+    },
+    "app": {
       "appLocation": "./src/Cloud5mins.ShortenerTools.TinyBlazorAdmin",
       "apiLocation": "./src/Cloud5mins.ShortenerTools.Functions",
       "outputLocation": "bin/Debug/net8.0/wwwroot",
