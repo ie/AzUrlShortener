@@ -6,7 +6,7 @@
     <ImplicitUsings>enabled</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="local.settings.json" />
+    <None Remove="local.settings.example.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="cronos" Version="0.8.4" />
@@ -22,10 +22,6 @@
   <ItemGroup>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="local.settings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
