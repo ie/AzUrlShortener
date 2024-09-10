@@ -205,7 +205,27 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ddematheu2",
+      "name": "ddematheu2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43075365?v=4",
+      "profile": "https://github.com/ddematheu2",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "davidop",
+      "name": "David Oliva Paredes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7433346?v=4",
+      "profile": "https://davidop.code.blog/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
